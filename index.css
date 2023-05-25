@@ -65,6 +65,70 @@ body {
     color:#fff;
     text-decoration:underline;
 }
+/* h1#medium {
+    text-decoration: none;
+  }   */
+.blog-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+  a {
+    color: #84b9d4;
+  }
+  
+  a:hover {
+    color: #daeaf2;
+  }
+  /* Define the animation */
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+/* Apply the animation to the main div */
+.blog-post {
+  animation: move-up 2s ease-in-out;
+}
+/* Define the animation */
+@keyframes move-up {
+    from {
+    transform: translateY(0);
+    opacity: 0; /* add this line */
+    }
+    to {
+    transform: translateY(-30px);
+    opacity: 1; /* add this line */
+    }
+    }
+    
+    /* Apply the animation to the main div */
+    .blog-post {
+    animation: move-up 2s ease-in-out forwards;
+    opacity: 0; /* add this line */
+    }
+   /* Make the animation start after 1 second */
+   .blog-post {
+    animation-delay: 0.7s;
+    }
+    
+    /* Make the animation repeat infinitely */
+    .blog-post {
+    animation-iteration-count: 1;
+    }
+    
+    /* Make the animation alternate between forward and backward */
+    .blog-post {
+    animation-direction: alternate;
+    }   
+
+
 #middle {
     width:100vw;
     height:90vh;
@@ -167,7 +231,7 @@ body {
     cursor: pointer;
     color:#84b9d4;
 }
-.container {
+/* .container {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
@@ -178,7 +242,22 @@ body {
     max-height:100vh;
     overflow-y:auto;
     display:none;
-}
+} */
+.container {
+    width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    background: transparent;
+    color: #fff;
+    z-index: 9;
+    position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: none;
+    backdrop-filter: blur(5px); /* Adjust the blur radius as desired */
+    -webkit-backdrop-filter: blur(0px); /* For Safari */
+  }
+  
 .container div {
     font-size:25px;
     margin:20px 0px;
@@ -310,14 +389,14 @@ body {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: #84b9d4; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 50, 50,0.8); 
+    background: #84b9d4; 
 }
 ::selection {
 	color: #fff;
-	background: rgb(255, 50, 50);
+	background: #84b9d4;
 }
 
 @media (max-width: 800px){ 
