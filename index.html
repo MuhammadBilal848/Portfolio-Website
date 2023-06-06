@@ -1,363 +1,691 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bilal Haneef</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bilal Haneef</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div id="particles-js"></div>
+  <div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+  </div>
+  <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Projects</b></a>
+  <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Articles</b></a>
+  <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Resume</b></a>
+  <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+    <h1>Bilal Haneef</h1>
+    <h2>Machine Learning Engineer</h2>
+    <div id="menu">
+      <a onclick="showabout()">Projects</a>
+      <a onclick="showwork()">Articles</a>
+      <a onclick="showcontact()">Resume</a>
     </div>
-    <div id="particles-js"></div>
-    <div id="box">
-        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
-        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
-    </div>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Projects</b></a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Articles</b></a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;"><b>Resume</b></a>
-    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <h1 >yourname.</h1>
-        <h2>Software Developer / Photographer / Human</h2>
-        <div id="menu">
-            <a onclick="showabout()">Projects</a>
-            <a onclick="showwork()">Articles</a>
-            <a onclick="showcontact()">Resume</a>
-        </div>
-        <table>
-            <tr>
-              <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/bilalhaneef484/" target="_blank"><i class="fab fa-facebook"></i></a></td>
-              <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/mbhqs" target="_blank"><i class="fab fa-twitter"></i></a></td>
-              <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.linkedin.com/in/bilal-haneef-32014a1a2/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
-              <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://github.com/MuhammadBilal848/" target="_blank"><i class="fab fa-github"></i></a></td>
-              <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://stackoverflow.com/users/13754963/muhammad-bilal-haneef-qureshi" target="_blank"><i class="fab fa-stack-overflow"></i></a></td>
-              <td class="animated zoomIn" style="animation-delay:3.2s;"><a class="social" href="https://www.kaggle.com/muhammadbilalhaneef" target="_blank"><i class="fab fa-kaggle"></i></a></td>
-            </tr>
-          </table>
-            
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1 align = 'center'>Articles</h1>
-        <br>
-        <section>
-            <!-- <div>
+    <table>
+      <tr>
+        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+            href="https://www.facebook.com/bilalhaneef484/" target="_blank"><i class="fab fa-facebook"></i></a></td>
+        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/mbhqs"
+            target="_blank"><i class="fab fa-twitter"></i></a></td>
+        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+            href="https://www.linkedin.com/in/bilal-haneef-32014a1a2/" target="_blank"><i
+              class="fab fa-linkedin"></i></a></td>
+        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+            href="https://github.com/MuhammadBilal848/" target="_blank"><i class="fab fa-github"></i></a></td>
+        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"
+            href="https://stackoverflow.com/users/13754963/muhammad-bilal-haneef-qureshi" target="_blank"><i
+              class="fab fa-stack-overflow"></i></a></td>
+        <td class="animated zoomIn" style="animation-delay:3.2s;"><a class="social"
+            href="https://www.kaggle.com/muhammadbilalhaneef" target="_blank"><i class="fab fa-kaggle"></i></a></td>
+        </td>
+
+      </tr>
+    </table>
+
+  </div>
+  <div id="work_container" class="container">
+    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <h1 align='center'>Articles</h1>
+    <br>
+    <section>
+      <!-- <div>
                 <h2 align=left id="medium">Medium</h2>
                 <p align = center>I am passionate about using data to drive meaningful change. Follow me on Medium as i share insights on the latest advances in machine learning and deep learning.</p>
             </div> -->
-            <div class="blog-post">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*S7dLnzQ5-5Rq0fbtfYZLBA.jpeg" alt="Blog image" class="blog-image">
-                <div class="blog-content">
-                    <a href="https://medium.com/@bilalhanif848/the-art-of-data-harvesting-an-introduction-to-web-scraping-using-selenium-61e972748bfb" target="_blank">The Art of Data Harvesting: An Introduction to Web Scraping Using Selenium</a>
-                  <p>Written By: Bilal Haneef</p>
-                  <p class="Date">Published: Feb 16, 2023</p>
-                  <!-- Add your blog text here -->
-                  </a>
-                </div>
-              </div>
-              <div class="blog-post">
-                <img src="https://machinelearningcompass.com/static/c32af02d3a84ba704bed82458e50c3fb/8beaa/LinearRegression_Thumbnail.png" alt="Blog image" class="blog-image">
-                <div class="blog-content">
-                    <a href="https://medium.com/@bilalhanif848/linear-regression-demystified-a-simple-and-intuitive-approach-8e383a33e9b9" target="_blank">Linear Regression Demystified: A Simple and Intuitive Approach
-                    </a>
-                  <p>Written By: Bilal Haneef</p>
-                  <p class="Date">Published: Jan 9, 2023</p>
-                  <!-- Add your blog text here -->
-                  </a>
-                </div>
-              </div>
-        </section>
-    </div>
-    <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-<div align="center">
-            <h1 >Projects</h1>
-            <br>
-            <br>
-                <div class="main-div" style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
-                <h3 style="text-align: center; margin-bottom: 5px;">Accidents Dashboard</h3>
-                <div class="slide-left">
-                <p>This project</p>
-                </div>
-                <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
-                <p>Power BI</p>
-                <p>SQL</p>
-                </div>
-                <!-- This it the play icon -->
-                <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9" target="_blank" class="playBut">
-                <!-- SVG code for the play button -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"/>
-                <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                </svg>
-                </a>
-                </div>
-                <!-- this is the github repo icon -->
-                <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon" target="_blank">
-                <i class="fab fa-github"></i>
-                </a>
-                </div>
-             
-                  <br>
-
-                <div class="main-div" style="border: 1px solid black; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
-                <h3 style="text-align: center; margin-bottom: 5px;">Project 2</h3>
-                <!-- Car Counter Using YOLOv8 -->
-                <div class="slide-left">
-                <p>This project</p>
-                </div>
-                <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
-                <p>Power BI</p>
-                <p>SQL</p>
-                </div>
-                <!-- This it the play icon -->
-                <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9" target="_blank" class="playBut">
-                <!-- SVG code for the play button -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"/>
-                <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                </svg>
-                </a>
-                </div>
-                <!-- this is the github repo icon -->
-                <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon" target="_blank">
-                <i class="fab fa-github"></i>
-                </a>
-                </div>
-
-                  <br>
-
-                <div class="main-div" style="border: 1px solid black; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
-                <h3 style="text-align: center; margin-bottom: 5px;">Project 3</h3>
-                <!-- Pizza Dashboard -->
-                <div class="slide-left">
-                <p>This project</p>
-                </div>
-                <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
-                <p>Power BI</p>
-                <p>SQL</p>
-                </div>
-                <!-- This it the play icon -->
-                <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9" target="_blank" class="playBut">
-                <!-- SVG code for the play button -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"/>
-                <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                </svg>
-                </a>
-                </div>
-                <!-- this is the github repo icon -->
-                <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon" target="_blank">
-                <i class="fab fa-github"></i>
-                </a>
-                </div>
-                       
-                    <br>
-
-                <div class="main-div" style="border: 1px solid black; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
-                <h3 style="text-align: center; margin-bottom: 5px;">Real Time License Plate Recognition With Custom Trained YOLOv8</h3>
-                <div class="slide-left">
-                <p>This project</p>
-                </div>
-                <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
-                <p>Power BI</p>
-                <p>SQL</p>
-                </div>
-                <!-- This it the play icon -->
-                <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9" target="_blank" class="playBut">
-                <!-- SVG code for the play button -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"/>
-                <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                </svg>
-                </a>
-                </div>
-                <!-- this is the github repo icon -->
-                <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon" target="_blank">
-                <i class="fab fa-github"></i>
-                </a>
-                </div>
-    
-                  <br>
-
-                <div class="main-div" style="border: 1px solid black; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
-                <h3 style="text-align: center; margin-bottom: 5px;">License Plate Recognition Using OCR</h3>
-                <div class="slide-left">
-                <p>This project</p>
-                </div>
-                <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
-                <p>Power BI</p>
-                <p>SQL</p>
-                </div>
-                <!-- This it the play icon -->
-                <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9" target="_blank" class="playBut">
-                <!-- SVG code for the play button -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"/>
-                <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                </svg>
-                </a>
-                </div>
-                <!-- this is the github repo icon -->
-                <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon" target="_blank">
-                <i class="fab fa-github"></i>
-                </a>
-                </div>
-    
-
-</div>
-</div>
-
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <div>
-                <h1 align="center">Resume</h1>
-                <div align="center">
-                  <p>Some text</p>
-                </div>
-              <br>
-                <h1 style="text-decoration: none;">Education</h1>
-                  <br>
-                  <br>
-                <div class="education">
-                  <i class="fas fa-graduation-cap graduation-cap"></i>
-                  <div>
-                    <h6><b>2014 - 2016</b></h6>
-                    <h2><b>Secondary Education</b></h2>
-                  </div>
-                </div>
-              
-                <br>
-
-                <div class="education">
-                    <i class="fas fa-graduation-cap graduation-cap"></i>
-                    <div>
-                      <h6><b>2016 - 2018</b></h6>
-                      <h2><b>Higher Secondary Education</b></h2>
-                    </div>
-                  </div>
-              
-                  <br>
-
-                <div class="education">
-                <i class="fas fa-graduation-cap graduation-cap"></i>
-                <div>
-                    <h6><b>2020 - 2024</b></h6>
-                    <h2><b>Bachelors in Science</b></h2>
-                </div>
-                </div>
-            <img src="icons/img.png" alt="Image" class="image">
-
-              <h1 style="text-decoration: none; text-align:center;">Skills</h1>
-              <div class="boss-box">
-                <div class="boss-box">
-                  <div class="skill-box">
-                    <img src="icons/html.svg" alt="HTML">
-                    <p>HTML</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/css.svg" alt="CSS">
-                    <p>CSS</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/pandas.svg" alt="Pandas">
-                    <p>PANDAS</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/scikit.svg" alt="Scikit-learn">
-                    <p>SCIKIT-LEARN</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/flask.svg" alt="Flask">
-                    <p>FLASK</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/cv.svg" alt="OpenCV">
-                    <p>OPENCV</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/git.svg" alt="Git">
-                    <p>GIT</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/mysql.svg" alt="MySQL">
-                    <p>MYSQL</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/powerbi.svg" alt="Power BI">
-                    <p>POWER BI</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/python.svg" alt="Python">
-                    <p>PYTHON</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/selenium.svg" alt="Selenium">
-                    <p>SELENIUM</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/tensorflow.svg" alt="TensorFlow">
-                    <p>TENSORFLOW</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/seaborn.svg" alt="Seaborn">
-                    <p>SEABORN</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/numpy.svg" alt="NumPy">
-                    <p>NUMPY</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/matplotlib.svg" alt="Matplotlib">
-                    <p>MATPLOTLIB</p>
-                  </div>
-                  <div class="skill-box">
-                    <img src="icons/keras.svg" alt="Keras">
-                    <p>KERAS</p>
-                  </div> 
-                </div>
-                </div>
-                <br>
-                <h1 style="text-decoration: none; text-align:right;">Experience</h1>
-                <br>
-                <br>
-                <div class="experience">
-                  <div>
-                    <h6><b>ProximaAI</b></h6>
-                  </div>
-                </div>
-                <br>
-                                <div class="experience">
-                  <div>
-                    <h6><b>ProximaAI 2</b></h6>
-                  </div>
-                </div>
-                
-
-
-
-
-                
-              </div>
+      <div class="blog-post">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*S7dLnzQ5-5Rq0fbtfYZLBA.jpeg" alt="Blog image"
+          class="blog-image">
+        <div class="blog-content">
+          <a href="https://medium.com/@bilalhanif848/the-art-of-data-harvesting-an-introduction-to-web-scraping-using-selenium-61e972748bfb"
+            target="_blank">The Art of Data Harvesting: An Introduction to Web Scraping Using Selenium</a>
+          <p>Written By: Bilal Haneef</p>
+          <p class="Date">Published: Feb 16, 2023</p>
+          <!-- Add your blog text here -->
+          </a>
         </div>
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+      </div>
+      <div class="blog-post">
+        <img
+          src="https://machinelearningcompass.com/static/c32af02d3a84ba704bed82458e50c3fb/8beaa/LinearRegression_Thumbnail.png"
+          alt="Blog image" class="blog-image">
+        <div class="blog-content">
+          <a href="https://medium.com/@bilalhanif848/linear-regression-demystified-a-simple-and-intuitive-approach-8e383a33e9b9"
+            target="_blank">Linear Regression Demystified: A Simple and Intuitive Approach
+          </a>
+          <p>Written By: Bilal Haneef</p>
+          <p class="Date">Published: Jan 9, 2023</p>
+          <!-- Add your blog text here -->
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="about_container" class="container">
+    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <div align="center">
+      <h1>Projects</h1>
+      <br>
+      <br>
+      <div class="main-div"
+        style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
+        <h3 style="text-align: center; margin-bottom: 5px;">Accidents Dashboard</h3>
+        <div class="slide-left">
+          <p>The Power BI dashboard created using the Maven Analytics NYC Accidents dataset provides a concise overview
+            of accident-related information in New York City. It presents data in an easily understandable visual
+            format, allowing users to analyze trends, patterns, and factors contributing to accidents. The dashboard
+            helps stakeholders gain valuable insights and make informed decisions regarding traffic safety and accident
+            prevention measures.</p>
+        </div>
+        <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
+          <p>Power BI</p>
+          <p>SQL</p>
+          <p>Power Query</p>
+          <p>CSV</p>
+        </div>
+        <!-- This it the play icon -->
+        <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9"
+            target="_blank" class="playBut">
+            <!-- SVG code for the play button -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px"
+              viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+              <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1" />
+              <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+            </svg>
+          </a>
+        </div>
+        <!-- this is the github repo icon -->
+        <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon"
+          target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="main-div"
+        style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
+        <h3 style="text-align: center; margin-bottom: 5px;">Vehicle Counter Using Yolov8</h3>
+        <!-- Car Counter Using YOLOv8 -->
+        <div class="slide-left">
+          <p>The vehicle counter utilizing YOLOv8 is an intelligent system that efficiently detects and tracks vehicles
+            in real-time. Built upon the state-of-the-art YOLOv8 object detection algorithm, it employs advanced deep
+            learning techniques to accurately identify and count vehicles from various camera perspectives. With its
+            high-speed processing capabilities and precise object localization, the vehicle counter offers a valuable
+            solution for traffic monitoring, congestion analysis, and urban planning applications.</p>
+        </div>
+        <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
+          <p>Python</p>
+          <p>OpenCv</p>
+          <p>YOLOv8</p>
+          <p>Numpy</p>
+        </div>
+        <!-- This it the play icon -->
+        <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
+          <a href="https://www.youtube.com/watch?v=7e74J2a1Xgw" target="_blank" class="playBut">
+            <!-- SVG code for the play button -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px"
+              viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+              <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1" />
+              <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+            </svg>
+          </a>
+        </div>
+        <!-- this is the github repo icon -->
+        <a href="https://github.com/MuhammadBilal848/Computer-Vision-Project-1-Vehicle-Counter-With-YOLOv8"
+          class="github-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="main-div"
+        style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
+        <h3 style="text-align: center; margin-bottom: 5px;">Pizza Dashboard</h3>
+        <!-- Pizza Dashboard -->
+        <div class="slide-left">
+          <p>The Pizza Power BI dashboard is a visual representation of key data and insights related to pizza sales and
+            customer preferences. It showcases important metrics such as top-selling pizza flavors, popular toppings,
+            delivery locations, and customer satisfaction ratings. This interactive dashboard enables pizzeria owners
+            and managers to analyze sales trends, identify customer preferences, and make data-driven decisions to
+            optimize their menu offerings and improve overall customer experience.</p>
+        </div>
+        <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
+          <p>Power BI</p>
+          <p>SQL</p>
+          <p>Power Query</p>
+          <p>CSV</p>
+        </div>
+        <!-- This it the play icon -->
+        <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYjMzZTc5NmUtNzEyMC00YTBkLWI2N2EtYzBiM2E5N2JkMTRlIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9"
+            target="_blank" class="playBut">
+            <!-- SVG code for the play button -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px"
+              viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+              <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1" />
+              <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+            </svg>
+          </a>
+        </div>
+        <!-- this is the github repo icon -->
+        <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Pizza-" class="github-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <!-- <br> -->
+
+      <!-- <div class="main-div"
+        style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
+        <h3 style="text-align: center; margin-bottom: 5px;">Real Time License Plate Recognition With Custom Trained
+          YOLOv8</h3>
+        <div class="slide-left">
+          <p>This project</p>
+        </div>
+        <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
+          <p>Power BI</p>
+          <p>SQL</p>
+        </div>
+        <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9"
+            target="_blank" class="playBut">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px"
+              viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+              <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1" />
+              <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+            </svg>
+          </a>
+        </div>
+        <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon"
+          target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="main-div"
+        style="border: 1px solid #85b9d4; width: 800px; height: 300px; padding: 10px; position: relative; border-radius: 20px;">
+        <h3 style="text-align: center; margin-bottom: 5px;">License Plate Recognition Using OCR</h3>
+        <div class="slide-left">
+          <p>This project</p>
+        </div>
+        <div class="slide-right" style="position: absolute; bottom: 0; right: 0;">
+          <p>Power BI</p>
+          <p>SQL</p>
+        </div>
+        <div class="plbt" style="position: absolute; bottom: 2.5px; left: -350px;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NGE4OTctNzhlNi00NGI1LTgxMDYtOGY5ZGVjMzIyMmRmIiwidCI6IjM0OWVhNjFiLTdiNjYtNDIxNS05N2I3LTFhMjU5MTIzYzdhNSIsImMiOjl9"
+            target="_blank" class="playBut">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="50px" height="50px"
+              viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+              <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1" />
+              <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+            </svg>
+          </a>
+        </div>
+        <a href="https://github.com/MuhammadBilal848/Power-BI-Dashboard-For-Accidents" class="github-icon"
+          target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+
+
+    </div>
+  </div>
+
+  <div id="contact_container" class="container">
+    <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+    <div>
+      <h1 align="center">Resume</h1>
+      <div>
+        <p style="text-align: center; margin-top: 20px;">
+          <a href="/resume/Bilal Haneef.pdf" target="_blank" class="btn_one">Download CV</a>
+        </p>
+      </div>
+      <br>
+      <div align="center">
+        <p>My portfolio is like a playground of algorithms where I bring data to life.</p>
+        <p>From taming wild datasets to unraveling the secrets of AI, I dance with code and let machines do the talking.
+        </p>
+        <p>Don't worry, I promise not to let them take over the world—unless they bring pizza for everyone!</p>
+        <p>So grab a virtual seat and let's explore the magic of machine learning together!</p>
+      </div>
+      <br>
+      <h1 style="text-decoration: none;">Education</h1>
+      <br>
+      <br>
+      <div class="education">
+        <i class="fas fa-graduation-cap graduation-cap"></i>
+        <div>
+          <h6><b>2014 - 2016</b></h6>
+          <h2><b>Secondary Education</b></h2>
+          <h2><b>B G S School</b></h2>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="education">
+        <i class="fas fa-graduation-cap graduation-cap"></i>
+        <div>
+          <h6><b>2016 - 2018</b></h6>
+          <h2><b>Higher Secondary Education</b></h2>
+          <h2><b>Govt. Inter Boys College</b></h2>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="education">
+        <i class="fas fa-graduation-cap graduation-cap"></i>
+        <div>
+          <h6><b>2020 - 2024</b></h6>
+          <h2><b>Bachelors in Science</b></h2>
+          <h2><b>Karachi University (UBIT)</b></h2>
+
+        </div>
+      </div>
+      <img src="icons/img.png" alt="Image" class="image">
+
+      <h1 style="text-decoration: none; text-align:center;">Skills</h1>
+      <div class="boss-box">
+        <div class="boss-box">
+          <div class="skill-box">
+            <img src="icons/html.svg" alt="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/css.svg" alt="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/pandas.svg" alt="Pandas">
+            <p>PANDAS</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/scikit.svg" alt="Scikit-learn">
+            <p>SCIKIT-LEARN</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/flask.svg" alt="Flask">
+            <p>FLASK</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/cv.svg" alt="OpenCV">
+            <p>OPENCV</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/git.svg" alt="Git">
+            <p>GIT</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/mysql.svg" alt="MySQL">
+            <p>MYSQL</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/powerbi.svg" alt="Power BI">
+            <p>POWER BI</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/python.svg" alt="Python">
+            <p>PYTHON</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/selenium.svg" alt="Selenium">
+            <p>SELENIUM</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/tensorflow.svg" alt="TensorFlow">
+            <p>TENSORFLOW</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/seaborn.svg" alt="Seaborn">
+            <p>SEABORN</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/numpy.svg" alt="NumPy">
+            <p>NUMPY</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/matplotlib.svg" alt="Matplotlib">
+            <p>MATPLOTLIB</p>
+          </div>
+          <div class="skill-box">
+            <img src="icons/keras.svg" alt="Keras">
+            <p>KERAS</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br>
+      <h1 style="text-decoration: none; text-align:right;">Experience</h1>
+      <br>
+      <!-- <br> -->
+      <div class="experience-container">
+        <div class="experience">
+          <div>
+            <h3><b>Kaggle Expert</b></h3>
+            <h6 class="bullet-heading">Proficient in data preprocessing, feature engineering, and data augmentation
+              techniques to enhance model performance.</h6>
+            <h6 class="bullet-heading">Skilled in various machine learning algorithms, including both traditional models
+              (such as linear regression, random forests, and gradient boosting) and deep learning models (such as
+              convolutional neural networks and recurrent neural networks)</h6>
+            <h6 class="bullet-heading">Well-versed in hyperparameter tuning techniques to optimize model performance.
+            </h6>
+            <h6 class="bullet-heading">Proficient in using popular machine learning libraries and frameworks, such as
+              scikit-learn, TensorFlow</h6>
+            <h6 class="bullet-heading">Familiarity with cloud computing platforms (e.g., AWS, Google Cloud) to scale
+              computations and handle large datasets.</h6>
+            <h6 class="bullet-heading">Ability to adapt quickly to new tools, techniques, and datasets, staying updated
+              with the latest developments in the field of machine learning.</h6>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="experience">
+          <div>
+            <h3><b>Proxima AI (Oct-2022 - June-2023)</b></h3>
+            <h6 class="bullet-heading">Developed intuitive and informative dashboards that improved data accessibility
+              and facilitated decision-making for clients.</h6>
+            <h6 class="bullet-heading">Successfully implemented web scraping techniques to gather relevant data from
+              diverse sources, ensuring the accuracy and integrity of the collected information.</h6>
+            <h6 class="bullet-heading">Presented data analysis findings in a clear and concise manner, enabling
+              stakeholders to make informed decisions based on the results.</h6>
+            <h6 class="bullet-heading">Collaborated effectively with the team, actively participating in discussions
+              and bringing innovative ideas to the table.</h6>
+            <h6 class="bullet-heading">Implemented scrapper bots, gathered relevant data from diverse sources using web
+              scraping techniques, presented concise findings, collaborated effective</h6>
+          </div>
+        </div>
+        <img src="icons/experience.png" alt="experience" class="exp-image">
+      </div>
+
+      <br>
+
+      <h1 style="text-decoration: none; text-align:left;">Achievements</h1>
+      <br>
+      <!-- <br> -->
+      <div class="achievements-container">
+        <div class="achievements">
+          <div>
+            <h3><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank"
+                style="text-decoration: none;">Machine Learning Specialization</a></h3>
+            <div class='headingbeforelogo'>
+              <p>The Machine Learning Specialization is a foundational online program
+                created in collaboration between DeepLearning.AI and Stanford Online. This Specialization is taught by
+                Andrew Ng, an AI visionary who has led critical research at Stanford University and groundbreaking work
+                at Google Brain, Baidu, and Landing.AI to advance the AI field. This 3-course Specialization is an
+                updated version of Andrew’s pioneering Machine Learning course, rated 4.9 out of 5 and taken by over 4.8
+                million learners since it launched in 2012.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              Feb 07, 2023</p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/XJP4NXRVSKLV" target="_blank"
+                class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/mls.png" alt="Machine Learning Specialization" class="mls-image">
+        </div>
+
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://www.coursera.org/specializations/deep-learning?" target="_blank"
+                style="text-decoration: none;">Deep
+                Learning Specialization</a></h3>
+            <div class='headingbeforelogo'>
+              <p>The Deep Learning Specialization is a foundational program that will help you understand the
+                capabilities, challenges, and consequences of deep learning and prepare you to participate in the
+                development of leading-edge AI technology.In this Specialization, you will build and train neural
+                network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs,
+                Transformers, and learn how to make them better with strategies such as Dropout, BatchNorm, Xavier/He
+                initialization, and more. Get ready to master theoretical concepts and their industry applications using
+                Python and TensorFlow and tackle real-world cases such as speech recognition, music synthesis, chatbots,
+                machine translation, natural language processing, and more.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              April 12, 2023
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/DK75F53KP4AX" target="_blank"
+                class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/dls.png" alt="Deep Learning Specialization" class="mls-image">
+        </div>
+
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://learn.365datascience.com/courses/preview/statistics/" target="_blank"
+                style="text-decoration: none;">Statistic for Data Science & Business Analysis</a></h3>
+            <div class='headingbeforelogo'>
+              <p>Covering descriptive and inferential statistics, as well as hypothesis testing techniques and
+                exercises,
+                statistics puts the “scientist” in data scientist. Statistics is the driving force in any quantitative
+                career. It is the fundamental skill that a data scientist needs in order to understand and design
+                statistical tests and analysis using modern software packages and programming languages. In this course,
+                we
+                start from the very basics and gradually build your statistical thinking. This, in turn, enables you to
+                understand the more complex analyses carried out later in the program.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              Nov 16, 2022
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://learn.365datascience.com/certificates/CC-8BCBC8E2B1/" target="_blank"
+                class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/stats.png" alt="Statistic for Data Science & Business Analysis" class="mls-image">
+        </div>
+
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi" target="_blank"
+                style="text-decoration: none;">Data Analyst in Power BI</a></h3>
+            <div class='headingbeforelogo'>
+              <p>Learn how to master Power BI—one of the world’s most popular business intelligence tools—in this
+                interactive learning path, co-created with Microsoft to pass the official PL-300 Data Analyst with Power
+                BI
+                exam. You’ll learn how to import, clean, manipulate, and visualize
+                data in Power BI—all critical skills for any aspiring data professional. Through hands-on exercises,
+                you'll
+                learn data analysis best practices and discover a world of Power BI functionalities, including data
+                modeling, DAX, Power Query, and many others.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              Feb 09, 2023
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.datacamp.com/statement-of-accomplishment/track/ff060f09957f2bf8ed1d468c2df3c55f3f41ae00"
+                target="_blank" class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/da.png" alt="Data Analyst in Power BI" class="mls-image">
+        </div>
+
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://app.datacamp.com/learn/courses/web-scraping-with-python" target="_blank"
+                style="text-decoration: none;">Web Scraping in Python</a></h3>
+            <div class='headingbeforelogo'>
+              <p>The ability to build tools capable of retrieving and parsing information stored across the internet has
+                been and continues to be valuable in many veins of data science.You will learn to
+                navigate and parse html code, and build tools to crawl websites automatically. Although our scraping
+                will be conducted using the versatile Python library scrapy, many of the techniques you learn in this
+                course can be applied to other popular Python libraries as well, including BeautifulSoup and Selenium.
+              </p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              Oct 16, 2022
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.datacamp.com/statement-of-accomplishment/course/fd1b899dfd6a99cd8ec75a14b5136391db38482a"
+                target="_blank" class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/wsp.png" alt="Web Scraping in Python" class="mls-image">
+        </div>
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://app.datacamp.com/learn/skill-tracks/sql-fundamentals" target="_blank"
+                style="text-decoration: none;">SQL Fundamentals</a></h3>
+            <div class='headingbeforelogo'>
+              <p>Gain the fundamental SQL skills you need to interact with and query your data.
+                SQL is a powerful language used by data-driven businesses, large and small, to explore and manipulate
+                their data to extract meaningful insights. In this track, you'll learn the SQL fundamentals you need to
+                level up your data skills.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              Nov 07, 2022
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.datacamp.com/statement-of-accomplishment/track/15edf078f8329785c914dda12afe49162691dc7d"
+                target="_blank" class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/sql.png" alt="SQL Fundamentals" class="mls-image">
+        </div>
+
+        <br>
+
+        <div class="achievements">
+          <div>
+            <h3><a href="https://www.coursera.org/learn/python" target="_blank"
+                style="text-decoration: none;">Programming for Everybody (Getting Started with Python)</a></h3>
+            <div class='headingbeforelogo'>
+              <p>This course aims to teach everyone the basics of programming computers using Python. We cover the
+                basics of how one constructs a program from a series of simple instructions in Python. The course has no
+                pre-requisites and avoids all but the simplest mathematics. Anyone with moderate computer experience
+                should be able to master the materials in this course. Once a student completes this course, they will
+                be ready to take more
+                advanced programming courses. This course covers Python 3.</p>
+            </div>
+            <p style="display: inline-block; margin-left: 25px; margin-top: -20px; font-size: 17px;">
+              April 26, 2020
+            </p>
+            <p style="display: inline-block; margin-left: 130px; margin-top: -20px; font-size: 17px;">
+              <a href="https://www.coursera.org/account/accomplishments/verify/96LN7HLHHEKA" target="_blank"
+                class="btn_one">Certification</a>
+            </p>
+          </div>
+          <img src="icons/python.png" alt="Programming for Everybody (Getting Started with Python)" class="mls-image">
+        </div>
+        <img src="icons/achievement.png" alt="achievement" class="achievement-image">
+
+      </div>
+      
+
+
+      <!-- <br>
+      <h1 style="text-decoration: none; text-align:center;">Contact Me</h1>
+      <br> -->
+      <!-- <br> -->
+
+      <!-- <div class="contact-container">
+        <section>
+          <h2 style="text-align: center;">Contact Me!</h2>
+          <p>
+          <form>
+            <input type="text" placeholder="name" required>
+            <input type="email" placeholder="email" required><br>
+            <textarea placeholder="your message" required rows="5"></textarea><br>
+            <button class="btn_one">send</button>
+          </form>
+          </p>
+        </section>
+      </div>
+     -->
+
+      <!-- <div>
+        <form action="mailto:bilalhanif848@gmail.com" method="POST" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div> -->
+
+
+
+      <script src="index.js" type="text/javascript"></script>
+      <script src="particles.js"></script>
+      <script src="app.js"></script>
 </body>
+
 </html>
