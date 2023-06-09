@@ -502,7 +502,7 @@ a:hover {
   height: auto; /* 90px*/
   background-color: #84b9d4;
   border-radius: 10px 0 0 10px;
-  top: 180px;
+  top: auto;
   position: absolute;
   right: 0;
   opacity: 0;
@@ -515,7 +515,7 @@ a:hover {
 }
 
 .main-div:hover .slide-right {
-  width: 100px;
+  width: 180px;
   opacity: 1;
 }
 
@@ -533,9 +533,9 @@ a:hover {
   animation: move-up 2s ease-in-out forwards;
   box-shadow: 0 0 10px 5px #85b9d4;
   transition: box-shadow 0.6s;
-  background: transparent;
+  /* background: transparent; */
   border-color: None;
-  opacity: 0;
+  /* opacity: 0; */
   /* add this line */
 }
 
@@ -657,7 +657,7 @@ h3 {
   color: #84b9d4;
   transition: color 0.3s;
   animation: spin 2s linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 5;
 }
 
 .github-icon:hover i {
