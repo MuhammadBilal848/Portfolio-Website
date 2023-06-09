@@ -3,7 +3,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://miro.medium.com/v2/resize:fit:3840/1*etDJsZIWf76sb1P_l6ZW3w.gif") center center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("icons/mainbg.gif") center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
