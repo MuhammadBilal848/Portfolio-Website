@@ -248,7 +248,7 @@ a:hover {
 
 .social:hover {
   cursor: pointer;
-  color: #84b9d4;
+  color: #d49b84;
 }
 
 .container {
@@ -488,7 +488,7 @@ a:hover {
 .slide-left {
   width: 0;
   height: auto; /* 120px*/
-  background-color: #84b9d4;
+  background-color: rgba(133, 185, 212, 0.3);
   border-radius: 0 10px 10px 0;
   top: 45px;
   position: absolute;
@@ -500,7 +500,7 @@ a:hover {
 .slide-right {
   width: 0;
   height: auto; /* 90px*/
-  background-color: #84b9d4;
+  background-color: rgba(133, 185, 212, 0.3);
   border-radius: 10px 0 0 10px;
   top: auto;
   position: absolute;
